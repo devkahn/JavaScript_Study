@@ -1,0 +1,36 @@
+body {
+    background : lightblue;
+}
+
+h1 {
+    text-transform: capitalize;
+    padding: 15px;
+    font-size: 50px;
+}
+
+.container {
+    text-align: center;
+    align-content: center;
+}
+
+.container span{
+    font-size: 100px;
+    font-weight: 800;
+    margin: 30px;
+    padding: 20px;
+}
+
+.button-container{
+    padding: 50px;
+}
+
+.btn {
+    height: 40px;
+    width: auto;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 5px;
+    border-radius: 10px;
+    background: none;
+}
