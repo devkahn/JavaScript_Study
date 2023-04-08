@@ -18,6 +18,20 @@ header{
     place-items: center;
 }
 
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: 0.3s linear;
+}
+
 .background-video{
     position: absolute;
     top: 0;
