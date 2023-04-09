@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-btns{
+    justify-content: space-between;
+    align-items: center 
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    
+    
+}
+
+.blink-timer{
+    animation: blink-effect 1s step-end infinite;
+}
+
+.timer p{
+    font-size: 70px;
+}
+
+
+
+
+.btn{
+    text-transform: uppercase;
+    width: 90px;
+    height: 35px;
+    margin: 0px 7px;
+
+    border: none;
+    border-radius: 5px;
+    color: white;
+    
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    opacity: 0.5;
+    transition: all 0.3s linear;
+}
+
+.btn-start{
+    background: darkgreen;
+}
+
+.btn-stop{
+    background: darkred;
+}
+
+.btn-reset{
+    background: grey;
+}
+
+
+@keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+  }
