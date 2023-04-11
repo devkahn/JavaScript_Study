@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS STYLE -->
+        <link rel="stylesheet" href="style.css">
+
+
+
+        <title>Rock Paaper Scissors Game</title>
+    </head>
+    <body>
+        <div class="game-container">
+            <h3>Rock Paper Scissors Game</h3>
+            <div class="user-choice">
+                <h5 >Choose your move:</h5>
+                <div class="choice-type">
+                    <button class="btn btn-rock">&#x1F44A;</button>
+                    <button class="btn btn-paper">&#x1f590;</button>
+                    <button class="btn btn-scissors">&#x270c;</button>
+                </div>
+            </div>
+            <button class="btn-play">GAME!!</button>
+
+            <div class="score-container">
+                <div class="count try-container">
+                    <p>Try Count : </p>
+                    <p class="try-count">5</p>
+                </div>
+                <div class="count user-container">
+                    <p>Your Winning :</p>
+                    <p class="userWinning-count">0</p>
+                </div>
+                <div class="count com-container">
+                    <p>Computer Winning : </p>
+                    <p class="comWinning-count">0</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

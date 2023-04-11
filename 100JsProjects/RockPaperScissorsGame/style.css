@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.game-container{
+    background: lightgray;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+.game-container h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.user-choice h5{
+    font-size: 25px;
+    background: red;
+    margin: 0;
+}
+
+.choice-type{
+    background-color: blue;
+    padding-bottom: 20px;
+    
+}
+
+.btn{
+    width: 100px;
+    height: 100px;
+    font-size: 55px;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.btn:hover{
+    opacity: 0.7;
+    transition: all 0.3s linear;
+}
+
+.btn.btn-rock{
+    background: red ;
+}
+
+.btn.btn-active{
+    border: 5px solid grey;
+}
+
+.btn.btn-paper{
+    background: deepskyblue;
+}
+
+.btn.btn-scissors{
+    background: green;
+}
+
+.btn-play{
+    width: 350px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.btn-play:hover{
+    color: white;
+    background: grey;
+}
+
+.score-container{
+    margin-top: 25px;
+    background: yellow;
+    
+}
+
+.count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border:  1px solid green;
+    height: 30px;
+    padding-right: 20px;
+    
+    
+}
+
+.count p:first-child{
+    font-weight: 700;
+}
+
+.count p:last-child{
+    margin-left: 5px;
+    text-align: center;
+}
