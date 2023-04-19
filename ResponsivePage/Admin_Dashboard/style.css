@@ -541,6 +541,11 @@ main .recent-order a {
     
 }
 
+.right .sales-analytics .add-product:hover {
+    background:var(--color-primary);
+    color: var(--color-white);
+}
+
 .right .sales-analytics .add-product div {
     display: flex;
     align-items: center;
