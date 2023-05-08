@@ -110,6 +110,12 @@ nav {
     z-index: 11;
 }
 
+/* change navbar styles on scroll using javascript */
+.window-scroll {
+    background:  var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
 .nav__container {
     height: 100%;
     display: flex;
@@ -192,6 +198,8 @@ header {
 .category {
     background:  var(--color-bg2);
     padding:  2rem;
+    height: 20rem;
+    overflow-wrap: unset;
     border-radius: 2rem;
     transition: var(--transition);
 }
