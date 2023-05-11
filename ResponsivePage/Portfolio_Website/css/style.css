@@ -185,3 +185,44 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+
+.services h2 {
+    margin-bottom: 5rem;
+}
+
+.services__container {
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services__container .services__box {
+    flex: 1 1 30rem;
+    background: var(--color-bg2);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--color-bg);
+    transition: 0.5s ease;
+}
+
+.services__container .services__box:hover {
+    border-color: var(--color-main);
+    transform:  scale(1.02);
+}
+
+.services__box i {
+    font-size: 7rem;
+    color: var(--color-main);
+}
+
+.services__box h3 {
+    font-size: 2.6rem;
+}
+
+.services__box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem ;
+}
