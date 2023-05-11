@@ -94,6 +94,19 @@ span {
 .home-img img {
     border-radius: 50%;
     width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);;
+    }
+    50% {
+        transform: translateY(-2.4rem);;
+    }
+    100% {
+        transform: translateY(0);;
+    }
 }
 
 .home-content h3 {
@@ -196,6 +209,7 @@ span {
 /* =============== SERVICE =============== */
 
 .services h2 {
+    margin-top: 100px;
     margin-bottom: 5rem;
 }
 
@@ -244,6 +258,7 @@ span {
 }
 
 .portfolio h2 {
+    margin-top: 100px;
     margin-bottom: 4rem;
 }
 
@@ -321,6 +336,7 @@ span {
 
 /* =============== CONTACT =============== */
 .contact h2 {
+    margin-top: 100px;
     margin-bottom: 3rem;
 }
 

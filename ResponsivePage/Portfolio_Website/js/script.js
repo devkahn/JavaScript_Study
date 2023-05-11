@@ -37,3 +37,19 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
+
+
+
+/* ============= SCROLL REVEAL ============= */
+ScrollReveal ({
+    // reset: true,
+    distance:'80px',
+    duration: 2000,
+    delay: 200
+});
+
+
+ScrollReveal().reveal('.home-content, .heading', {origin:'top'});
+ScrollReveal().reveal('.home-img, .services__container, .portfolio__box, .contact form', {origin:'bottom'});
+ScrollReveal().reveal('.home-content h1, .about__img', {origin:'left'});
+ScrollReveal().reveal('.home-content p, .about__content', {origin:'right'});
