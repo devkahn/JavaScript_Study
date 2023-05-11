@@ -53,3 +53,14 @@ ScrollReveal().reveal('.home-content, .heading', {origin:'top'});
 ScrollReveal().reveal('.home-img, .services__container, .portfolio__box, .contact form', {origin:'bottom'});
 ScrollReveal().reveal('.home-content h1, .about__img', {origin:'left'});
 ScrollReveal().reveal('.home-content p, .about__content', {origin:'right'});
+
+
+
+/* ============= Typed js ============= */
+const typed = new Typed('.multiple-text', {
+    strings : ['Frontend Developer', 'Revit Add-In Developer', 'AEC Platform Developer'],
+    typeSpeed : 100,
+    backSpeed : 150,
+    backDelay : 1000,
+    loop : true
+});
