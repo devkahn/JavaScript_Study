@@ -9,6 +9,7 @@
     --color-primary : #191d2b;
     --color-secondary : #27AE60;
     --color-white : #FFFFFF;
+    --color-black : #000000;
     --color-grey0 : #f8f8f8;
     --color-grey1 : #dbe1e8;
     --color-grey2 : #b2becd;
@@ -60,7 +61,7 @@ section {
 .sec1 {
     display: none;
     transform: translateY(0) scale(1);
-    background-color: rgb(146, 100, 190);
+    background-color: var(--color-primary);
 }
 
 .sec2 {
@@ -137,4 +138,121 @@ section {
     font-size: 1.2rem;
     color: var(--color-grey2);
     pointer-events: none;
+}
+
+
+
+/* ==================== HEADER-CONTENTS ==================== */
+.header__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+
+.header__content .left__header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__content .left__header .h__shape {
+    transition: all 0.4s ease-in-out;
+    width: 65%;
+    height: 100%;
+    background: var(--color-secondary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    clip-path: polygon(0 0, 46% 0 , 79% 100%,  0% 100%);
+}
+
+.left__header .image {
+    border-radius: var(--br-sm-2);
+    height: 90%;
+    /* width: 68%; */
+    margin-left: 4rem;
+    background:  var(--color-black);
+    transition:  all 0.4s ease-in-out;
+}
+
+.left__header .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition:  all 0.4s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.left__header .image img:hover {
+    filter: grayscale(0%);
+}
+
+.header__content .right__header {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 18rem;
+}
+
+.header__content .right__header .name {
+    font-size: 3rem;
+}
+
+.header__content .right__header .name span {
+    color: var(--color-secondary);
+}
+
+.header__content .right__header p {
+    margin: 1.5rem 0;
+    line-height: 2rem;
+}
+
+
+/* -------------------- INDEPENDED COMPONENTS -------------------- */
+.btn-con{
+    display: flex;
+    align-self: flex-start;
+}
+.main-btn {
+    border-radius: 30px;
+    color: inherit;
+    font-weight: 600;
+    position: relative;
+    border: 1px solid var(--color-secondary);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .btn-text {
+        padding:  0 2rem;
+    }
+    .btn-icon {
+        background-color: var(--color-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 1rem;
+        
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition:  all 0.4s ease-out;
+        z-index: -1;
+    }
+    &:hover{
+        transition: all 0.4s ease-out;
+        &::before{
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-secondary);
+            transform: translateX(0);
+            transition: all 0.4s ease-out;
+        }
+    }
 }
