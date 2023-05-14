@@ -256,3 +256,32 @@ section {
         }
     }
 }
+
+
+/* ==================== ABOUT-CONTENTS ==================== */
+.main__title {
+    text-align: center;
+    h2{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    }
+}
+
+
+
+.main__title h2 span {
+    color: var(--color-secondary);
+}
+
+.main__title h2 .bt-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--color-grey5);
+    transition: all 0.4s ease-in-out;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    font-size: 6.3rem;
+}
