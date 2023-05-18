@@ -67,7 +67,6 @@ section {
 .sec2 {
     display: none;
     transform: translateY(0) scale(1);
-    background-color: slateblue;
 }
 
 .sec3 {
@@ -210,6 +209,240 @@ section {
 }
 
 
+
+
+
+/* ==================== ABOUT-CONTENTS ==================== */
+
+
+.about__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+}
+
+.about__container .right__about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.about__container .right__about .about-item {
+    border: 1px solid var(--color-grey5);
+    border-radius: 5px;
+    transition:  all 0.4s ease-in-out;
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about__container .right__about .about-item:hover {
+    cursor: default;
+    transform: translateY(-5px);
+    border: 1px solid var(--color-secondary);
+    box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about__container .right__about .about-item .about-text {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__container .right__about .about-item .about-text .large-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+.about__container .right__about .about-item .about-text .small-text{
+    padding-left: 3rem;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: var(--color-grey1);
+    letter-spacing: 2px;
+}
+
+.about__container .right__about .about-item .about-text .small-text::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 2rem;
+    height: 2px;
+    background-color: var(--color-grey5);
+}
+
+.about__container .left__about {
+    padding-right: 5rem;
+}
+
+.about__container .left__about h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.about__container .left__about p {
+    line-height: 2rem;
+    padding: 1rem;
+}
+
+.about__stats {
+    padding-bottom:  4rem;
+}
+
+.about__stats h4 {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 3.5rem 0;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.about__stats h4::before {
+    content: '';
+    left: 50%;
+    top: 0;
+    width: 40%;
+    height: 1px;
+    background-color: var(--color-grey5);
+    transform:  translateX(-50%);
+}
+
+.about__stats .progress__bars {    
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.about__stats .progress__bars .progress__bar {    
+    display: flex;
+    flex-direction: column;
+}
+
+.about__stats .progress__bars .progress__bar .progress__title {
+    text-transform:  uppercase;
+    font-weight: 500;
+}
+
+.about__stats .progress__bars .progress__bar .progress__contents {
+    display: flex;
+    align-items: center;
+}
+
+.about__stats .progress__bars .progress__bar .progress__contents .progress__text {
+    color: var(--color-grey2);
+}
+
+.about__stats .progress__bars .progress__bar .progress__contents .progress {
+    width: 100%;
+    height: 0.45rem;
+    background-color: var(--color-grey4);
+    margin-left: 1rem;
+    position: relative;
+}
+
+.about__stats .progress__bars .progress__bar .progress__contents .progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--color-secondary);
+    transition: all 0.4s ease-in-out;
+    width: 60%;
+}
+
+.about__stats .progress__bars .progress__bar .progress__contents .progress .html {
+    width: 90%;
+}
+
+.about__stats .progress__bars .progress__bar .progress__contents .progress .css {
+    width: 95%;
+}
+
+.about__stats .progress__bars .progress__bar .progress__contents .progress .javascript {
+    width: 75%;
+}
+
+.about__stats .progress__bars .progress__bar .progress__contents .progress .reactjs {
+    width: 70%;
+}
+
+.about__stats .progress__bars .progress__bar .progress__contents .progress .nodejs {
+    width: 87%;
+}
+
+.about__stats .progress__bars .progress__bar .progress__contents .progress .python {
+    width: 70%;
+}
+
+.about__timeline {
+    padding-bottom: 3rem;
+}
+
+.about__timeline h4 {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 3.5rem 0;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.about__timeline .timeline__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.about__timeline .timeline__item {
+    position: relative;
+    padding-left: 3rem;
+    border-left: 1px solid var(--color-grey5);
+}
+
+.about__timeline .timeline__item .timeline__icon {
+    position: absolute;
+    left: -27px;
+    top: 0;
+    background-color: var(--color-secondary);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about__timeline .timeline__item .timeline__icon i {
+    font-size: 1.3rem;
+}
+
+.about__timeline .timeline__item .timeline__duration {
+    padding: 0.2rem 0.6rem;
+    background-color: var(--color-grey5);
+    border-radius: 15px;
+    display: inline-block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.about__timeline .timeline__item h5 {
+    padding:  1rem 0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.about__timeline .timeline__item h5 span {
+    color: var(--color-grey2);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+
+
+
+
 /* -------------------- INDEPENDED COMPONENTS -------------------- */
 .btn-con{
     display: flex;
@@ -257,30 +490,28 @@ section {
     }
 }
 
-
-/* ==================== ABOUT-CONTENTS ==================== */
 .main__title {
     text-align: center;
-    h2{
+}
+
+.main__title h2 {
     position: relative;
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: 700;
-    }
 }
-
-
 
 .main__title h2 span {
     color: var(--color-secondary);
 }
 
-.main__title h2 .bt-text{
+.main__title h2 .bg-text{
     position: absolute;
     top: 50%;
     left: 50%;
     color: var(--color-grey5);
     transition: all 0.4s ease-in-out;
+    z-index: -1;
     transform: translate(-50%, -50%);
     font-weight: 800;
     font-size: 6.3rem;
