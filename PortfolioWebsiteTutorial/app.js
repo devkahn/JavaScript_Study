@@ -34,7 +34,11 @@ function PageTransitions() {
         }
     })
 
-
+    const themeBtn = document.querySelector('.theme__btn');
+    themeBtn.addEventListener('click', ()=>{
+        let element = document.body;
+        element.classList.toggle('light-mode')
+    })
 }
 
 PageTransitions();
